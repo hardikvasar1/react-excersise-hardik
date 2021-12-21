@@ -20,6 +20,7 @@ import Demo10_1 from './demo10_1';
 import Demo11 from './demo11';
 import Demo12 from './demo12';
 import Demo13 from './demo13';
+import Demo14 from './demo14';
 import Demo15 from './demo15';
 import Demo16 from './demo16';
 import Demo17 from './demo17';
@@ -71,7 +72,9 @@ class App extends Component {
             <li>
               <Link to="/demo13">demo13</Link>
             </li>
-
+            <li>
+              <Link to="/demo14">demo14</Link>
+            </li>
             <li>
               <Link to="/demo15">demo15</Link>
             </li>
@@ -125,6 +128,11 @@ class App extends Component {
               exact
               path="/demo13"
               element={<Demo13 color="orange" />}
+            ></Route>
+            <Route
+              exact
+              path="/demo14"
+              element={<Demo14 color="red" />}
             ></Route>
             <Route exact path="/demo15" element={<Demo15 />}></Route>
             <Route exact path="/demo16" element={<Demo16 />}></Route>

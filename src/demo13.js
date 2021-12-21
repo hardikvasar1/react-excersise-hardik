@@ -13,3 +13,6 @@ export default function Demo13(props) {
     </div>
   );
 }
+Demo13.propTypes = {
+  color: PropTypes.string,
+};
