@@ -12,9 +12,7 @@ export default function demo10_1(props) {
         />
         <div class="card-body">
           <h5 class="card-title">{props.title}</h5>
-          <p class="card-text">
-            {props.description}
-          </p>
+          <p class="card-text">{props.description}</p>
           <a
             href="https://en.wikipedia.org/wiki/Bob_Dylan"
             class="btn btn-primary"
@@ -33,5 +31,5 @@ export default function demo10_1(props) {
 }
 demo10_1.propTypes = {
   title: PropTypes.string,
-  description:PropTypes.description,
+  description: PropTypes.string,
 };
