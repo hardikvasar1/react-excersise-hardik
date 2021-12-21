@@ -8,15 +8,13 @@ export default function demo11(props) {
       <>
         <div className="jumbotron m-5">
           <h1 className="display-4">{props.title}</h1>
-          <p className="lead">
-            React is the most popular rendering library in the world
-          </p>
+          <p className="lead">{props.description}</p>
           <a
             className="btn btn-primary btn-lg"
-            href="https://reactjs.org/"
+            href={props.buttonURL}
             role="button"
           >
-            Go to the official website
+            {props.buttonLabel}
           </a>
         </div>
       </>

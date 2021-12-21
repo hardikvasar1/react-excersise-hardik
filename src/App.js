@@ -87,6 +87,12 @@ class App extends Component {
           </ul>
 
           <Routes>
+            <Route exact path="/demo1" element={<Demo1 />}></Route>
+            <Route exact path="/demo2" element={<Demo2 />}></Route>
+            <Route exact path="/demo3" element={<Demo3 />}></Route>
+            <Route exact path="/demo4" element={<Demo4 />}></Route>
+            <Route exact path="/demo5" element={<Demo5 />}></Route>
+            <Route exact path="/demo6" element={<Demo6 />}></Route>
             <Route exact path="/demo7" element={<Demo7 />}></Route>
             <Route exact path="/demo8" element={<Demo8 />}></Route>
             <Route exact path="/demo9" element={<Demo9 />}></Route>
@@ -96,7 +102,18 @@ class App extends Component {
               path="/demo10_1"
               element={<Demo10_1 title="Paul Mccartney" />}
             ></Route>
-            <Route exact path="/demo11" element={<Demo11 />}></Route>
+            <Route
+              exact
+              path="/demo11"
+              element={
+                <Demo11
+                  title="Welcome to react"
+                  description="React is the most popular rendering library in the world"
+                  buttonLabel="Go to the official website"
+                  buttonURL="https://reactjs.org/"
+                />
+              }
+            ></Route>
             <Route
               exact
               path="/demo12"
@@ -116,7 +133,7 @@ class App extends Component {
             <Route
               exact
               path="/demo13_1"
-              color={{ red: 'alert-danger' }}
+              title="hello"
               element={<Demo13_1 />}
             ></Route>
             <Route exact path="/demo15" element={<Demo15 />}></Route>
