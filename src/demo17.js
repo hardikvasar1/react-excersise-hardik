@@ -2,12 +2,12 @@ import React from 'react';
 import './style.css';
 
 export default function Demo17() {
-  onclick = () => {
+  function handleClick() {
     console.log('I was Clicked!');
-  };
+  }
   return (
     <>
-      <button onclick={onclick()}>Clickme</button>
+      <button onClick={handleClick()}>Clickme</button>
     </>
   );
 }
