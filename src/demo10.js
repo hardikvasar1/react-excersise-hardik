@@ -10,7 +10,7 @@ export default function demo10() {
           alt="Card image cap"
         />
         <div class="card-body">
-          <h5 class="card-title">{props.title}</h5>
+          <h5 class="card-title">Boby hbdfre</h5>
           <p class="card-text">
             Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American
             singer/songwriter, author, and artist who has been an influential
