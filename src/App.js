@@ -77,7 +77,16 @@ class App extends Component {
               element={<Demo10_1 title="Paul Mccartney" />}
             ></Route>
             <Route exact path="/demo11" element={<Demo11 />}></Route>
-            <Route exact path="/demo12" element={<Demo12 />}></Route>
+            <Route
+              exact
+              path="/demo12"
+              element={
+                <Demo12
+                  text="OMG! Something really bad has happended!"
+                  show={true}
+                />
+              }
+            ></Route>
           </Routes>
         </div>
       </Router>
