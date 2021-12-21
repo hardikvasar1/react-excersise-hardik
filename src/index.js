@@ -11,6 +11,6 @@ import Demo11 from './demo11';
 import Demo12 from './demo12';
 
 ReactDOM.render(
-  <Demo12 text="Welcome to react" />,
+  <Demo12 text="OMG! Something really bad has happended!" show={true} />,
   document.getElementById('root')
 );

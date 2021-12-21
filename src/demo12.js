@@ -1,21 +1,15 @@
 import React from 'react';
 import './style.css';
-import PropTypes from 'prop-types';
+import Alert from 'react-bootstrap/Alert';
 import 'bootstrap/dist/css/bootstrap.css';
-export default function demo12(props) {
-  const Alert = () => {
+export default function Demo12(props) {
+  if (props.show === false) {
+    return null;
+  } else {
     return (
-      <>
-        <Alert text={props.text} />
-      </>
+      <Alert>
+        <Alert.Heading>{props.text}</Alert.Heading>
+      </Alert>
     );
-  };
-  return (
-    <>
-      <Alert />
-    </>
-  );
+  }
 }
-demo12.propTypes = {
-  text: PropTypes.string,
-};
