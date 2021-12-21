@@ -9,6 +9,7 @@ export default function App() {
       <h1>
         Hello my name is {name} and my age is {age}
       </h1>
+      kjghukjhugh
     </div>
   );
 }
