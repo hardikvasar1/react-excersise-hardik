@@ -28,7 +28,7 @@ export default function demo10() {
   };
   return (
     <>
-      <Card title="Hello" />
+      <Card />
     </>
   );
 }
