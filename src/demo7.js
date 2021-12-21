@@ -8,7 +8,7 @@ export default function demo7() {
     { label: 'Elephant' },
     { label: 'Monkey' },
   ];
-  const listItems = animals.map(function (data, index) {
+  const listItems = animals.map((data, index) => {
     return <li key={index}>{data.label}</li>;
   });
   return <>{listItems}</>;
