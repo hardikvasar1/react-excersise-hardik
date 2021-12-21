@@ -1,24 +1,25 @@
 import React from 'react';
 import './style.css';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-export default function demo11() {
+import PropTypes from 'prop-types';
+import 'bootstrap/dist/css/bootstrap.css';
+export default function demo11(props) {
   const Jumbotrons = () => {
     return (
-      <Jumbotron>
-        <div class="jumbotron m-5">
-          <h1 class="display-4">Welcome to react</h1>
-          <p class="lead">
+      <>
+        <div className="jumbotron m-5">
+          <h1 className="display-4">{props.title}</h1>
+          <p className="lead">
             React is the most popular rendering library in the world
           </p>
           <a
-            class="btn btn-primary btn-lg"
+            className="btn btn-primary btn-lg"
             href="https://reactjs.org/"
             role="button"
           >
             Go to the official website
           </a>
         </div>
-      </Jumbotron>
+      </>
     );
   };
   return (
@@ -27,3 +28,9 @@ export default function demo11() {
     </>
   );
 }
+demo11.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  buttonLabel: PropTypes.string,
+  buttonURL: PropTypes.any,
+};
