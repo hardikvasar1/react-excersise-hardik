@@ -100,7 +100,14 @@ class App extends Component {
             <Route
               exact
               path="/demo10_1"
-              element={<Demo10_1 title="Paul Mccartney" />}
+              element={
+                <Demo10_1
+                  title="Paul Mccartney"
+                  description=" Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American
+              singer/songwriter, author, and artist who has been an influential
+              figure in popular music and culture for more than five decades."
+                />
+              }
             ></Route>
             <Route
               exact

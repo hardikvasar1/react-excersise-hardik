@@ -13,9 +13,7 @@ export default function demo10_1(props) {
         <div class="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">
-            Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American
-            singer/songwriter, author, and artist who has been an influential
-            figure in popular music and culture for more than five decades.
+            {props.description}
           </p>
           <a
             href="https://en.wikipedia.org/wiki/Bob_Dylan"
@@ -35,4 +33,5 @@ export default function demo10_1(props) {
 }
 demo10_1.propTypes = {
   title: PropTypes.string,
+  description:PropTypes.description,
 };
