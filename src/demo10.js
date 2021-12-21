@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-export default function demo9() {
+export default function demo10() {
   const Card = () => {
     return (
       <div class="card m-5">

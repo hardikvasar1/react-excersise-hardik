@@ -7,4 +7,4 @@ import Demo8 from './demo8';
 import Demo9 from './demo9';
 import Demo10_1 from './demo10_1';
 
-ReactDOM.render(<Demo10_1 />, document.getElementById('root'));
+ReactDOM.render(<Demo10_1 title="Hello" />, document.getElementById('root'));
