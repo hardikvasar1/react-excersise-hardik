@@ -15,7 +15,7 @@ export default function demo5() {
   ];
   return (
     <div>
-      <ul>{List}</ul>
+      <ul key={Math.random()}>{List}</ul>
     </div>
   );
 }
